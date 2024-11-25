@@ -55,3 +55,21 @@ function updateBtn() {
         txt.textContent = "The machine is stopped";
     }
 }
+
+//alert(5 /2);
+
+//alert(2 ** 2); ~ 2 ^ 2
+//alert(2 ** (1/2)) ~ 2 ^ 1/2
+
+//+ is the only operator that supports strings in such a way. Other arithmetic operator will covert to numbers
+//alert(2 + 2 + "1"); ~ 41
+//alert("1" + 2 + 2); ~ 122
+
+let a = prompt("First number?", 1);
+let b = prompt("Second number?", 2);
+
+alert(a + b); //12
+
+//if we want output is 3 we can use (Number) or prepending them with +
+
+alert(+a + +b);
