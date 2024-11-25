@@ -41,6 +41,7 @@ let myNumber1 = Number(myNumber) + 3;
 console.log(myNumber1);
 */
 
+/*
 const btn = document.querySelector("button");
 const txt = document.querySelector("p");
 
@@ -56,7 +57,7 @@ function updateBtn() {
     }
 }
 
-//alert(5 /2);
+//alert(5 / 2);
 
 //alert(2 ** 2); ~ 2 ^ 2
 //alert(2 ** (1/2)) ~ 2 ^ 1/2
@@ -72,4 +73,28 @@ alert(a + b); //12
 
 //if we want output is 3 we can use (Number) or prepending them with +
 
-alert(+a + +b);
+alert(+a + +b); // or let a = +prompt("fn", 1); let b = +prompt("sn", 2);
+
+const bigInt = 1313614654554115614848n // n mean it's a BigInt
+
+// There are 8 basic data types in Js: number, bigInt, string, boolean, null, undefined, symbol, object
+*/
+
+function capitalize(str) {
+ if (str.length == 0){
+    return str;
+ }
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
+
+
+console.log(capitalize("hello"));
+
+function lastLetter(str) {
+    if (str.length == 0) {
+        return str;
+    }
+    return str.slice(str.length -1);
+}
+
+console.log(lastLetter("abcdafjkalalkfjhgajkh"));
