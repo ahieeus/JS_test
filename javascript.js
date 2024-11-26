@@ -11,14 +11,10 @@ age = 54;
 
 console.log(age);
 
-
 const pi = 3.14;
 pi = 10;
 
 console.log(pi); //error
-
-
-
 
 const myInt = 5;
 const myFloat = 6.667;
@@ -40,6 +36,8 @@ console.log(typeof myNumber);
 let myNumber1 = Number(myNumber) + 3;
 console.log(myNumber1);
 */
+
+
 
 /*
 const btn = document.querySelector("button");
@@ -80,6 +78,8 @@ const bigInt = 1313614654554115614848n // n mean it's a BigInt
 // There are 8 basic data types in Js: number, bigInt, string, boolean, null, undefined, symbol, object
 */
 
+
+/*
 function capitalize(str) {
  if (str.length == 0){
     return str;
@@ -98,3 +98,18 @@ function lastLetter(str) {
 }
 
 console.log(lastLetter("abcdafjkalalkfjhgajkh"));
+*/
+
+let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+for (let i = 0; i <= answer; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+      } else if (i % 3 === 0) {
+        console.log("Fizz");
+      } else if (i % 5 === 0) {
+        console.log("Buzz");
+      } else {
+        console.log(i);
+      }
+}
